@@ -23,19 +23,17 @@
     "lint-staged": "^6.0.1",
     "prettier": "^1.10.2",
     "react-app-rewire-eslint": "^0.2.3",
-    "react-app-rewired": "^1.4.0"
+    "react-app-rewired": "^1.4.0",
+    "source-map-explorer": "^1.5.0"
   },
   "scripts": {
-    "precommit": "lint-staged",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test --env=jsdom"
+    "test": "react-app-rewired test --env=jsdom",
+    "precommit": "lint-staged",
+    "analyze": "source-map-explorer build/static/js/main.*"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css,scss}": [
-      "prettier --write",
-      "eslint",
-      "git add"
-    ]
+    "src/**/*.{js,jsx,json,css,scss}": ["prettier --write", "eslint", "git add"]
   }
 }
