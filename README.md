@@ -103,6 +103,8 @@ Linter have 2 categories of rules:
 * Formatting rules.
 * Code-quality rules.
 
+#### JS Linter
+
 CRA intentionally provides a set of ESLint rules called "react-app" - includes formatting rules and code-quality rules.
 
 But, in the aspect of formatting rules, I prefer [prettier](https://prettier.io/) personally. So, I extend `eslint-config-react-app` with `eslint-plugin-prettier`.
@@ -122,6 +124,14 @@ Related packages:
 * `eslint-plugin-prettier`
   * `prettier`
   * `eslint-config-prettier`
+
+#### CSS Linter
+
+Related packages:
+
+* `stylelint`
+* `stylelint-config-standard`
+* `stylelint-config-prettier`
 
 ### Auto Formatting
 
