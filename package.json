@@ -42,10 +42,9 @@
     "analyze": "source-map-explorer build/static/js/main.*"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --write",
-      "eslint",
-      "git add"
-    ]
+    "concurrent": false,
+    "src/**/*.{js,jsx,json,css}": ["prettier --write"],
+    "src/**/*.{js,jsx,json}": ["eslint"],
+    "src/**/*.{js,jsx,json,css}": ["git add"]
   }
 }
