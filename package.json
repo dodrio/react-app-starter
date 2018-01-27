@@ -43,8 +43,10 @@
   },
   "lint-staged": {
     "concurrent": false,
-    "src/**/*.{js,jsx,json,css}": ["prettier --write"],
-    "src/**/*.{js,jsx,json}": ["eslint"],
-    "src/**/*.{js,jsx,json,css}": ["git add"]
+    "linters": {
+      "src/**/*.{js,jsx,json,css}": ["prettier --write"],
+      "src/**/*.{js,jsx,json}": ["eslint"],
+      "src/**/*.{js,jsx,json,css}": ["git add"]
+    }
   }
 }
