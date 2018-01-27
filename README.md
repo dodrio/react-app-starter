@@ -6,13 +6,14 @@
 <!-- start: markdown-toc -->
 
 * [Preface](#preface)
-* [Runtime Enhancement](#runtime-enhancement)
-  * [Browser Polyfills](#browser-polyfills)
+* [Browser Enhancement](#browser-enhancement)
+  * [Polyfills](#polyfills)
+  * [Stylesheets](#stylesheets)
 * [React Enhancement](#react-enhancement)
   * [Typechecking](#typechecking)
   * [Router](#router)
   * [State Management](#state-management)
-  * [Stylesheets](#stylesheets)
+  * [Stylesheets](#stylesheets-1)
   * [Static Assets](#static-assets)
 * [QA](#qa)
   * [Linter](#linter)
@@ -39,12 +40,16 @@ Related packages:
 
 * `react-app-rewired`
 
-## Runtime Enhancement
+## Browser Enhancement
 
-### Browser Polyfills
+### Polyfills
 
 * [Promise](https://github.com/then/promise)
 * [fetch() API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+### Stylesheets
+
+* [sanitize.css](https://github.com/jonathantneal/sanitize.css)
 
 ## React Enhancement
 
