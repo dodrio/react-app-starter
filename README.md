@@ -5,6 +5,7 @@
 
 <!-- start: markdown-toc -->
 
+* [Usage](#usage)
 * [Preface](#preface)
 * [Browser Enhancement](#browser-enhancement)
   * [Polyfills](#polyfills)
@@ -30,6 +31,12 @@
 * [LICENSE](#license)
 
 <!-- end: markdown-toc -->
+
+## Usage
+
+Download the latest version from [Releases Page](https://github.com/m31271n/react-app-starter/releases). Then use the code to initialize your own repo.
+
+Read more information about this starter in the following sections.
 
 ## Preface
 
