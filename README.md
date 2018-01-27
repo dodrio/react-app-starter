@@ -51,6 +51,7 @@ Related packages:
 ### Stylesheets
 
 * [sanitize.css](https://github.com/jonathantneal/sanitize.css)
+* `font-size: 62.5%;` for using `rem`
 
 ## React Enhancement
 
