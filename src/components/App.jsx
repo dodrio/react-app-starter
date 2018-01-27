@@ -8,7 +8,7 @@ const Container = styled.div`
 `;
 
 const Circle = styled.img`
-  height: 80px;
+  height: 8rem;
 
   @keyframes spin {
     from {
@@ -28,7 +28,7 @@ const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 5rem;
 `;
 
 @inject('speedStore')
