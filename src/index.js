@@ -8,7 +8,7 @@ import 'sanitize.css';
 import { AppContainer } from 'react-hot-loader';
 import registerServiceWorker from './registerServiceWorker';
 
-import counterStore from './stores/counter';
+import speedStore from './stores/speed';
 
 import './index.css';
 import App from './components/App';
@@ -30,7 +30,7 @@ useStrict(true);
 
 // render
 const stores = {
-  counterStore,
+  speedStore,
 };
 
 const rootEl = document.getElementById('root');

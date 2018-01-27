@@ -1,13 +1,15 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
 import styled from 'styled-components';
-import logo from './logo.svg';
+import circle from './circle.svg';
 
 const Container = styled.div`
   text-align: center;
 `;
 
-const Logo = styled.img`
+const Circle = styled.img`
+  height: 80px;
+
   @keyframes spin {
     from {
       transform: rotate(0deg);
@@ -17,41 +19,50 @@ const Logo = styled.img`
     }
   }
 
-  animation: spin infinite 5s linear;
-  height: 80px;
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 `;
 
 const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  background-color: #222;
+  padding: 50px;
 `;
 
-const Intro = styled.p`
-  font-size: large;
-`;
-
-@inject('counterStore')
+@inject('speedStore')
 @observer
 class App extends React.Component {
-  onIncrease = () => this.props.counterStore.increase();
-  onDecrease = () => this.props.counterStore.decrease();
+  onIncrease = () => this.props.speedStore.increase();
+  onDecrease = () => this.props.speedStore.decrease();
 
   render() {
-    const { counterStore } = this.props;
+    const { speedStore } = this.props;
 
     return (
       <Container>
         <Header>
-          <Logo src={logo} alt="logo" />
+          <Circle
+            style={{ animationDuration: `${speedStore.currentSpeed}s` }}
+            src={circle}
+            alt="circle"
+          />
         </Header>
-        <Intro>Example Code - Simple Counter</Intro>
 
-        <p>{counterStore.count}</p>
-        <button onClick={this.onIncrease}>+</button>
-        <button onClick={this.onDecrease} disabled={counterStore.isDisbaled}>
+        <p>Speed Controller</p>
+
+        <p>{speedStore.value}</p>
+        <button
+          onClick={this.onIncrease}
+          disabled={speedStore.isIncreaseDisabled}
+        >
+          +
+        </button>
+        <button
+          onClick={this.onDecrease}
+          disabled={speedStore.isDecreaseDisabled}
+        >
           -
         </button>
       </Container>
