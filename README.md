@@ -16,6 +16,8 @@
   * [Static Assets](#static-assets)
 * [QA](#qa)
   * [Linter](#linter)
+    * [JS Linter](#js-linter)
+    * [CSS Linter](#css-linter)
   * [Auto Formatting](#auto-formatting)
   * [Static Type checking (TODO)](#static-type-checking-todo)
   * [Test (TODO)](#test-todo)
