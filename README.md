@@ -15,6 +15,7 @@
   * [State Management](#state-management)
   * [Stylesheets](#stylesheets-1)
   * [Static Assets](#static-assets)
+  * [Hot Reload In Development Environment](#hot-reload-in-development-environment)
 * [QA](#qa)
   * [Linter](#linter)
     * [JS Linter](#js-linter)
@@ -100,6 +101,15 @@ Related packages:
 Images / Fonts / Other files are supported.
 
 * Images types: `bmp`, `gif`, `jpg`, `jpeg`, `png`, `svg`
+
+### Hot Reload In Development Environment
+
+> react-hot-loader is not executed in production and the footprint is minimal.
+
+Related packages:
+
+* `react-app-rewire-hot-loader`
+* [`react-hot-loader`](https://github.com/gaearon/react-hot-loader)
 
 ## QA
 
