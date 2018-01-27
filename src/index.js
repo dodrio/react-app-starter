@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { useStrict } from 'mobx';
 import { Provider } from 'mobx-react';
 import promiseFinally from 'promise.prototype.finally';
+import 'sanitize.css';
 import registerServiceWorker from './registerServiceWorker';
 
 import counterStore from './stores/counter';
