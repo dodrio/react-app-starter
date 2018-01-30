@@ -106,6 +106,10 @@ Related packages:
 * `react-app-rewire-polished`
 * `polished`
 
+Read more:
+
+* [A Unified Styling Language](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
+
 ### Static Assets
 
 Images / Fonts / Other files are supported.
