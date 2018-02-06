@@ -97,14 +97,12 @@ Related packages:
 
 ### Stylesheets
 
-* CSS / styled-components / polished / autoprefixer are supported.
+* CSS / styled-components / autoprefixer are supported.
 
 Related packages:
 
 * `react-app-rewire-styled-components`
 * `stylted-components`
-* `react-app-rewire-polished`
-* `polished`
 
 Read more:
 
