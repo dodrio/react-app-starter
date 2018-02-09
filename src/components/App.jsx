@@ -1,5 +1,4 @@
 import React from 'react';
-import { inject, observer } from 'mobx-react';
 import styled from 'styled-components';
 import circle from './circle.svg';
 
@@ -31,20 +30,33 @@ const Header = styled.header`
   padding: 5rem;
 `;
 
-@inject('speedStore')
-@observer
 class App extends React.Component {
-  onIncrease = () => this.props.speedStore.increase();
-  onDecrease = () => this.props.speedStore.decrease();
+  state = { value: 5 };
+
+  onIncrease = () => {
+    this.setState({
+      value: this.state.value + 1,
+    });
+  };
+
+  onDecrease = () => {
+    this.setState({
+      value: this.state.value - 1,
+    });
+  };
 
   render() {
-    const { speedStore } = this.props;
+    const { value } = this.state;
+
+    const currentSpeed = 10 - value;
+    const isIncreaseDisabled = value >= 9;
+    const isDecreaseDisabled = value <= 1;
 
     return (
       <Container>
         <Header>
           <Circle
-            style={{ animationDuration: `${speedStore.currentSpeed}s` }}
+            style={{ animationDuration: `${currentSpeed}s` }}
             src={circle}
             alt="circle"
           />
@@ -52,17 +64,11 @@ class App extends React.Component {
 
         <p>Speed Controller</p>
 
-        <p>{speedStore.value}</p>
-        <button
-          onClick={this.onIncrease}
-          disabled={speedStore.isIncreaseDisabled}
-        >
+        <p>{value}</p>
+        <button onClick={this.onIncrease} disabled={isIncreaseDisabled}>
           +
         </button>
-        <button
-          onClick={this.onDecrease}
-          disabled={speedStore.isDecreaseDisabled}
-        >
+        <button onClick={this.onDecrease} disabled={isDecreaseDisabled}>
           -
         </button>
       </Container>
