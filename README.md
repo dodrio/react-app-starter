@@ -15,7 +15,6 @@ React App starter with best practices.
 * [React Enhancement](#react-enhancement)
   * [Typechecking](#typechecking)
   * [Router](#router)
-  * [State Management](#state-management)
   * [Stylesheets](#stylesheets-1)
   * [Static Assets](#static-assets)
   * [Hot Reload In Development Environment](#hot-reload-in-development-environment)
@@ -85,15 +84,6 @@ Read more:
 
 * [Code Splitting With react-router](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
 * [Configure production server to support client-side routing](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#serving-apps-with-client-side-routing)
-
-### State Management
-
-Use mobx in strict-mode for state management.
-
-Related packages:
-
-* `react-app-rewire-mobx`
-* `mobx`
 
 ### Stylesheets
 
