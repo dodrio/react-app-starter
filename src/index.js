@@ -5,12 +5,14 @@ import { useStrict } from 'mobx';
 import { Provider } from 'mobx-react';
 import promiseFinally from 'promise.prototype.finally';
 import 'sanitize.css';
+import 'web-candy/css/native-font.css';
+import 'web-candy/css/rem-font-size.css';
 import { AppContainer } from 'react-hot-loader';
 import registerServiceWorker from './registerServiceWorker';
 
 import speedStore from './stores/speed';
 
-import './index.css';
+import './global.css';
 import App from './components/App';
 
 function hotRender(Component, rootEl) {
