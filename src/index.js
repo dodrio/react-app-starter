@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import promiseFinally from 'promise.prototype.finally';
 import 'sanitize.css';
 import 'web-candy/css/native-font.css';
@@ -25,11 +24,7 @@ promiseFinally.shim();
 
 const rootEl = document.getElementById('root');
 
-const AppWrapper = () => (
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-);
+const AppWrapper = () => <App />;
 
 // Webpack HMR
 hotRender(AppWrapper, rootEl);
