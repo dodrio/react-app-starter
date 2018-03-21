@@ -76,10 +76,7 @@ Read more:
 
 ### Router
 
-Related packages:
-
-* `react-router`
-* `react-router-dom`
+This starter doesn't include router. Getting router support via [react-router](https://github.com/ReactTraining/react-router).
 
 Read more:
 
@@ -171,9 +168,9 @@ Related packages:
 
 The auto formatting steps are:
 
-1. `husky` runs githook.
-2. `lint-staged` runs as a githook.
-3. `prettier` runs as a step in `lint-staged`'s configs.
+1.  `husky` runs githook.
+2.  `lint-staged` runs as a githook.
+3.  `prettier` runs as a step in `lint-staged`'s configs.
 
 ### Static Type checking (TODO)
 
