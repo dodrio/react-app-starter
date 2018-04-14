@@ -42,17 +42,9 @@
     "analyze": "source-map-explorer build/static/js/main.*"
   },
   "lint-staged": {
-    "concurrent": false,
     "linters": {
-      "src/**/*.{js,jsx,json,css}": [
-        "git add"
-      ],
-      "src/**/*.{js,jsx,json}": [
-        "eslint"
-      ],
-      "src/**/*.css": [
-        "stylelint"
-      ]
+      "src/**/*.{js,jsx,json}": ["eslint", "git add"],
+      "src/**/*.css": ["stylelint", "git add"]
     }
   }
 }
