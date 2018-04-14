@@ -56,6 +56,11 @@ Related packages:
 
 * [Promise](https://github.com/then/promise)
 * [fetch() API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+* [babel-polyfill](https://babeljs.io/docs/usage/polyfill/)
+
+Related packages:
+
+* `react-app-rewire-polyfills`
 
 ### Stylesheets
 
