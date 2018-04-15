@@ -39,7 +39,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "lint": "eslint 'src/**/*.{js,jsx}'",
+    "lint": "eslint 'src/**/*.{js,jsx}' && stylelint 'src/**/*.css'",
     "test": "react-app-rewired test --env=jsdom",
     "precommit": "lint-staged",
     "analyze": "source-map-explorer build/static/js/main.*"
