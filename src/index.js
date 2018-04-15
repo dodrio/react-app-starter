@@ -5,7 +5,7 @@ import 'sanitize.css';
 import 'web-candy/css/native-font.css';
 import 'web-candy/css/rem-font-size.css';
 import { AppContainer } from 'react-hot-loader';
-import registerServiceWorker from './registerServiceWorker';
+import * as serviceWorker from './serviceWorker';
 
 import './global.css';
 import App from './components/App';
@@ -35,4 +35,7 @@ if (module.hot) {
   });
 }
 
-registerServiceWorker();
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
