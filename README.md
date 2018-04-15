@@ -207,6 +207,6 @@ All the environment variables are accessed by `process.env` in js files or by `%
 
 * [SEO vs. React: Web Crawlers are Smarter Than You Think](https://medium.freecodecamp.org/seo-vs-react-is-it-neccessary-to-render-react-pages-in-the-backend-74ce5015c0c9)
 
-## LICENSE
+## License
 
-MIT
+[MIT](https://stack.m31271n.com/licenses/MIT.txt) © [m31271n](https://stack.m31271n.com)
