@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import promiseFinally from 'promise.prototype.finally';
-import 'sanitize.css';
+import 'normalize.css';
+import 'web-candy/css/border-box.css';
 import 'web-candy/css/native-font.css';
 import 'web-candy/css/rem-font-size.css';
 import { AppContainer } from 'react-hot-loader';
