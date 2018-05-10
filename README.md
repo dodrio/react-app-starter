@@ -30,9 +30,11 @@ React App starter with my own preferences.
   * [Test (TODO)](#test-todo)
 * [API Request](#api-request)
 * [Environment Variables](#environment-variables)
+* [DEBUG](#debug)
+  * [Meta tags about building](#meta-tags-about-building)
 * [Deployment](#deployment)
 * [SEO](#seo)
-* [LICENSE](#license)
+* [License](#license)
 
 <!-- end: markdown-toc -->
 
@@ -197,6 +199,18 @@ The auto formatting steps are:
 And, you can create custom enviroment variables beginning with `REACT_APP_`. Any other enviroment variables will be ignored.
 
 All the environment variables are accessed by `process.env` in js files or by `%XXX%` in `public/index.html`.
+
+## DEBUG
+
+### Meta tags about building
+
+This insert three meta tags into the entry file - `index.html`. It helps you to identify the version of the running code.
+
+```
+<meta name="build:version" content="1.3.1">
+<meta name="build:commit" content="70412e2">
+<meta name="build:datetime" content="2018-05-10T09:06:29.900Z">
+```
 
 ## Deployment
 
