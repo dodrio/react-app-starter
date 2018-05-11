@@ -21,6 +21,8 @@ React App starter with my own preferences.
   * [Stylesheets](#stylesheets-1)
   * [Static Assets](#static-assets)
   * [Hot Reload In Development Environment](#hot-reload-in-development-environment)
+* [Performance](#performance)
+  * [Critical CSS](#critical-css)
 * [QA](#qa)
   * [Linter](#linter)
     * [JS Linter](#js-linter)
@@ -126,6 +128,16 @@ Related packages:
 
 * `react-app-rewire-hot-loader`
 * [`react-hot-loader`](https://github.com/gaearon/react-hot-loader)
+
+## Performance
+
+### Critical CSS
+
+> Critical CSS - CSS required for the initial page.
+
+Related packages:
+
+* `html-critical-webpack-plugin`
 
 ## QA
 
