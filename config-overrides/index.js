@@ -12,7 +12,10 @@ module.exports = function override(config, env) {
   config = rewireStyledComponents(config, env);
   config = rewireBabelPolyfill(config, env);
   config = rewireReactHotLoader(config, env);
-  config = rewireCriticalPlugin(config, env);
+
+  if (env === 'production') {
+    config = rewireCriticalPlugin(config, env);
+  }
 
   return config;
 };
