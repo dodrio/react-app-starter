@@ -9,6 +9,7 @@ function rewireCriticalPlugin(config, env) {
       src: 'index.html',
       dest: 'index.html',
       minify: true,
+      extract: true,
       dimensions: [
         // generic size of mobile
         {
