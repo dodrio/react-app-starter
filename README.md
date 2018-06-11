@@ -26,7 +26,6 @@ React App starter with my own preferences.
 * [QA](#qa)
   * [Linter](#linter)
     * [JS Linter](#js-linter)
-    * [CSS Linter](#css-linter)
   * [Auto Formatting](#auto-formatting)
   * [Static Type checking (TODO)](#static-type-checking-todo)
   * [Test (TODO)](#test-todo)
@@ -103,7 +102,7 @@ Recommended packages:
 
 ### Stylesheets
 
-* CSS / styled-components / autoprefixer are supported.
+* styled-components (built-in autoprefixer)
 
 Related packages:
 
@@ -169,14 +168,6 @@ Related packages:
 * `eslint-plugin-prettier`
   * `prettier`
   * `eslint-config-prettier`
-
-#### CSS Linter
-
-Related packages:
-
-* `stylelint`
-* `stylelint-config-standard`
-* `stylelint-config-prettier`
 
 ### Auto Formatting
 

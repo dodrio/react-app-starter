@@ -4,7 +4,7 @@ import 'normalize.css';
 import 'web-candy/css/border-box.css';
 import 'web-candy/css/native-font.css';
 import { AppContainer } from 'react-hot-loader';
-import './global.css';
+import './global-styles';
 import App from './components/App';
 
 function hotRender(Component, rootEl) {
