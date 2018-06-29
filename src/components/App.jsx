@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import circle from './circle.svg';
+import React from 'react'
+import styled from 'styled-components'
+import circle from './circle.svg'
 
 const Circle = styled.img.attrs({
   src: circle,
@@ -21,7 +21,7 @@ const Circle = styled.img.attrs({
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 5s;
-`;
+`
 
 const Container = styled.div`
   width: 100vw;
@@ -30,7 +30,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 class App extends React.Component {
   render() {
@@ -38,8 +38,8 @@ class App extends React.Component {
       <Container>
         <Circle />
       </Container>
-    );
+    )
   }
 }
 
-export default App;
+export default App
