@@ -22,3 +22,5 @@ function loadMetaInfo() {
   process.env.REACT_APP_BUILD_COMMIT = commit
   process.env.REACT_APP_BUILD_DATETIME = UTCDateTime
 }
+
+module.exports = loadMetaInfo
