@@ -7,6 +7,12 @@ import { AppContainer } from 'react-hot-loader'
 import './global-styles'
 import App from './components/App'
 
+if (process.env.NODE_ENV !== 'production') {
+  const { whyDidYouUpdate } = require('why-did-you-update')
+  whyDidYouUpdate(React)
+  console.info('[dev] why-did-you-update is enabled')
+}
+
 function hotRender(Component, rootEl) {
   ReactDOM.render(
     <AppContainer>
@@ -24,6 +30,7 @@ const AppWrapper = () => <App />
 hotRender(AppWrapper, rootEl)
 
 if (module.hot) {
+  console.info('[dev] react-hot-loader is enabled')
   module.hot.accept('./components/App', () => {
     hotRender(AppWrapper, rootEl)
   })
