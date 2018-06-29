@@ -9,33 +9,35 @@ React App starter with my own preferences.
 
 <!-- start: markdown-toc -->
 
-* [Usage](#usage)
-* [Preface](#preface)
-* [Browser Enhancement](#browser-enhancement)
-  * [Polyfills](#polyfills)
-  * [Stylesheets](#stylesheets)
-* [React Enhancement](#react-enhancement)
-  * [Typechecking](#typechecking)
-  * [Router](#router)
-  * [State Management](#state-management)
-  * [Stylesheets](#stylesheets-1)
-  * [Static Assets](#static-assets)
-  * [Hot Reload In Development Environment](#hot-reload-in-development-environment)
-* [Performance](#performance)
-  * [Critical CSS](#critical-css)
-* [QA](#qa)
-  * [Linter](#linter)
-    * [JS Linter](#js-linter)
-  * [Auto Formatting](#auto-formatting)
-  * [Static Type checking (TODO)](#static-type-checking-todo)
-  * [Test (TODO)](#test-todo)
-* [API Request](#api-request)
-* [Environment Variables](#environment-variables)
-* [DEBUG](#debug)
-  * [Meta tags about building](#meta-tags-about-building)
-* [Deployment](#deployment)
-* [SEO](#seo)
-* [License](#license)
+- [Usage](#usage)
+- [Preface](#preface)
+- [Browser Enhancement](#browser-enhancement)
+  - [Polyfills](#polyfills)
+  - [Stylesheets](#stylesheets)
+- [React Enhancement](#react-enhancement)
+  - [Typechecking](#typechecking)
+  - [Router](#router)
+  - [State Management](#state-management)
+  - [Stylesheets](#stylesheets-1)
+  - [Static Assets](#static-assets)
+- [Better Development Experience](#better-development-experience)
+  - [Hot Reloading](#hot-reloading)
+  - [Detecting Unnecessary Updates](#detecting-unnecessary-updates)
+- [Performance](#performance)
+  - [Critical CSS](#critical-css)
+- [QA](#qa)
+  - [Linter](#linter)
+    - [JS Linter](#js-linter)
+  - [Auto Formatting](#auto-formatting)
+  - [Static Type checking (TODO)](#static-type-checking-todo)
+  - [Test (TODO)](#test-todo)
+- [API Request](#api-request)
+- [Environment Variables](#environment-variables)
+- [DEBUG](#debug)
+  - [Meta tags about building](#meta-tags-about-building)
+- [Deployment](#deployment)
+- [SEO](#seo)
+- [License](#license)
 
 <!-- end: markdown-toc -->
 
@@ -53,23 +55,23 @@ I wanna tweak CRA app's webpack configs without [ejecting](https://github.com/fa
 
 Related packages:
 
-* `react-app-rewired`
+- `react-app-rewired`
 
 ## Browser Enhancement
 
 ### Polyfills
 
-* [Promise](https://github.com/then/promise)
-* [fetch() API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-* [babel-polyfill](https://babeljs.io/docs/usage/polyfill/)
+- [Promise](https://github.com/then/promise)
+- [fetch() API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [babel-polyfill](https://babeljs.io/docs/usage/polyfill/)
 
 Related packages:
 
-* `react-app-rewire-polyfills`
+- `react-app-rewire-polyfills`
 
 ### Stylesheets
 
-* [normalize.css](https://github.com/necolas/normalize.css)
+- [normalize.css](https://github.com/necolas/normalize.css)
 
 ## React Enhancement
 
@@ -77,11 +79,11 @@ Related packages:
 
 Related packages:
 
-* `prop-types`
+- `prop-types`
 
 Read more:
 
-* [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+- [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 ### Router
 
@@ -89,8 +91,8 @@ This starter doesn't include router. Getting router support via [react-router](h
 
 Read more:
 
-* [Code Splitting With react-router](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
-* [Configure production server to support client-side routing](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#serving-apps-with-client-side-routing)
+- [Code Splitting With react-router](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
+- [Configure production server to support client-side routing](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#serving-apps-with-client-side-routing)
 
 ### State Management
 
@@ -98,35 +100,43 @@ Read more:
 
 Recommended packages:
 
-* [unstated](https://github.com/thejameskyle/unstated)
+- [unstated](https://github.com/thejameskyle/unstated)
 
 ### Stylesheets
 
-* styled-components (built-in autoprefixer)
+- styled-components (built-in autoprefixer)
 
 Related packages:
 
-* `react-app-rewire-styled-components`
-* `stylted-components`
+- `react-app-rewire-styled-components`
+- `stylted-components`
 
 Read more:
 
-* [A Unified Styling Language](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
+- [A Unified Styling Language](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
 
 ### Static Assets
 
 Images / Fonts / Other files are supported.
 
-* Images types: `bmp`, `gif`, `jpg`, `jpeg`, `png`, `svg`
+- Images types: `bmp`, `gif`, `jpg`, `jpeg`, `png`, `svg`
 
-### Hot Reload In Development Environment
+## Better Development Experience
+
+### Hot Reloading
 
 > react-hot-loader is not executed in production and the footprint is minimal.
 
 Related packages:
 
-* `react-app-rewire-hot-loader`
-* [`react-hot-loader`](https://github.com/gaearon/react-hot-loader)
+- `react-app-rewire-hot-loader`
+- [`react-hot-loader`](https://github.com/gaearon/react-hot-loader)
+
+### Detecting Unnecessary Updates
+
+Related packages:
+
+- `why-did-you-update`
 
 ## Performance
 
@@ -136,7 +146,7 @@ Related packages:
 
 Related packages:
 
-* `html-critical-webpack-plugin`
+- `html-critical-webpack-plugin`
 
 ## QA
 
@@ -144,8 +154,8 @@ Related packages:
 
 Linter have 2 categories of rules:
 
-* Formatting rules.
-* Code-quality rules.
+- Formatting rules.
+- Code-quality rules.
 
 #### JS Linter
 
@@ -155,27 +165,27 @@ But, in the aspect of formatting rules, I prefer [prettier](https://prettier.io/
 
 Related packages:
 
-* `react-app-rewire-eslint`
-* `eslint`
-* `eslint-config-react-app`
+- `react-app-rewire-eslint`
+- `eslint`
+- `eslint-config-react-app`
 
-  * `babel-eslint`
-  * `eslint-plugin-flowtype`
-  * `eslint-plugin-import`
-  * `eslint-plugin-jsx-a11y`
-  * `eslint-plugin-react`
+  - `babel-eslint`
+  - `eslint-plugin-flowtype`
+  - `eslint-plugin-import`
+  - `eslint-plugin-jsx-a11y`
+  - `eslint-plugin-react`
 
-* `eslint-plugin-prettier`
-  * `prettier`
-  * `eslint-config-prettier`
+- `eslint-plugin-prettier`
+  - `prettier`
+  - `eslint-config-prettier`
 
 ### Auto Formatting
 
 Related packages:
 
-* `husky` - helper for githook defined in npm scripts.
-* `lint-staged` - command runner on staged files in git.
-* `prettier` - code formatter.
+- `husky` - helper for githook defined in npm scripts.
+- `lint-staged` - command runner on staged files in git.
+- `prettier` - code formatter.
 
 The auto formatting steps are:
 
@@ -185,15 +195,15 @@ The auto formatting steps are:
 
 ### Static Type checking (TODO)
 
-* [Adding Flow](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-flow)
+- [Adding Flow](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-flow)
 
 ### Test (TODO)
 
-* [Running Tests - Doc from CRA](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
+- [Running Tests - Doc from CRA](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
 
 ## API Request
 
-* [AJAX and APIs - Doc from React](https://reactjs.org/docs/faq-ajax.html)
+- [AJAX and APIs - Doc from React](https://reactjs.org/docs/faq-ajax.html)
 
 ## Environment Variables
 
@@ -217,11 +227,11 @@ This insert three meta tags into the entry file - `index.html`. It helps you to 
 
 ## Deployment
 
-* [Deployment - Doc from CRA](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment)
+- [Deployment - Doc from CRA](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment)
 
 ## SEO
 
-* [SEO vs. React: Web Crawlers are Smarter Than You Think](https://medium.freecodecamp.org/seo-vs-react-is-it-neccessary-to-render-react-pages-in-the-backend-74ce5015c0c9)
+- [SEO vs. React: Web Crawlers are Smarter Than You Think](https://medium.freecodecamp.org/seo-vs-react-is-it-neccessary-to-render-react-pages-in-the-backend-74ce5015c0c9)
 
 ## License
 
