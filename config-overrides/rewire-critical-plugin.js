@@ -1,5 +1,5 @@
-const path = require('path');
-const CriticalPlugin = require('html-critical-webpack-plugin');
+const path = require('path')
+const CriticalPlugin = require('html-critical-webpack-plugin')
 
 function rewireCriticalPlugin(config, env) {
   config.plugins = (config.plugins || []).concat(
@@ -27,9 +27,9 @@ function rewireCriticalPlugin(config, env) {
         blockJSRequests: false,
       },
     })
-  );
+  )
 
-  return config;
+  return config
 }
 
-module.exports = rewireCriticalPlugin;
+module.exports = rewireCriticalPlugin

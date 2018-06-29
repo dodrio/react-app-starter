@@ -1,5 +1,5 @@
-const path = require('path');
-const FaviconsPlugin = require('favicons-webpack-plugin');
+const path = require('path')
+const FaviconsPlugin = require('favicons-webpack-plugin')
 
 function rewireFaviconnsPlugin(config, env) {
   config.plugins = (config.plugins || []).concat(
@@ -21,9 +21,9 @@ function rewireFaviconnsPlugin(config, env) {
         windows: false,
       },
     })
-  );
+  )
 
-  return config;
+  return config
 }
 
-module.exports = rewireFaviconnsPlugin;
+module.exports = rewireFaviconnsPlugin
