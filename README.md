@@ -5,6 +5,8 @@
 [![Dependency Status](https://img.shields.io/david/m31271n/react-app-starter.svg)](#)
 [![DevDependency Status](https://img.shields.io/david/m31271n/react-app-starter.svg)](#)
 
+**DEPRECATED! DEPRECATED! DEPRECATED!**
+
 React App starter with my own preferences.
 
 <!-- start: markdown-toc -->
